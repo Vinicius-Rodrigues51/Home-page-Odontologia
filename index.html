@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Projeto 04</title>
 </head>
@@ -14,19 +19,19 @@
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Quem sou</a></li>
-                    <li><a href="#">Depoimentos</a></li>
-                    <li><a href="#">SObre</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#quem-sou">Quem sou</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#sobre">SObre</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
 
-            <nav class="menu-mobile">
-                <ul>
-                    <li><a href="#">Quem sou</a></li>
-                    <li><a href="#">Depoimentos</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
+            <nav id="openMenu" class="menu-mobile">
+                <ul id="menu">
+                    <li><a href="#quem-sou">Quem sou</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#sobre">SObre</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
 
@@ -115,7 +120,7 @@
         </div><!--container-->
     </section>
 
-    <section class="perfil">
+    <section id="quem-sou" class="perfil">
         <div class="container-perfil">
             <div class="img-fernanda"></div>
             <div class="content-fernanda">
@@ -158,7 +163,7 @@
     </section>
 
 
-    <section class="tratamentos">
+    <section id="sobre" class="tratamentos">
         <h2>Tratamentos</h2>
         <div class="container">
 
@@ -202,7 +207,7 @@
             </div><!--tratamento-container-->
 
 
-            <div id="last" class="tratamento-container">
+            <div class="tratamento-container">
 
                 <div class="tratamento-single">
                     <h2>Prótese Fixa</h2>
@@ -222,13 +227,13 @@
 
             </div><!--tratamento-container-->
 
-            <div class="clear"></div>
+            <!-- <div class="clear"></div> -->
 
         </div><!--container-->
     </section>
 
 
-    <section class="depoimentos">
+    <section id="depoimentos" class="depoimentos">
         <h2>Depoimentos</h2>
         <div class="container">
             <div class="depoimento-single">
@@ -254,15 +259,15 @@
 		</div><!--instagram-chamada-->
 
 		<div class="mosaico-social">
-			<div class="img-mosaico-single-social">1</div><!--img-mosaico-single-social-->
-			<div class="img-mosaico-single-social">2</div><!--img-mosaico-single-social-->
-			<div class="img-mosaico-single-social">3</div><!--img-mosaico-single-social-->
-			<div class="img-mosaico-single-social">4</div><!--img-mosaico-single-social-->
-			<div class="img-mosaico-single-social">5</div><!--img-mosaico-single-social-->
-			<div class="img-mosaico-single-social">6</div><!--img-mosaico-single-social-->
-			<div class="img-mosaico-single-social">7</div><!--img-mosaico-single-social-->
-			<div class="img-mosaico-single-social">8</div><!--img-mosaico-single-social-->
-			<div class="img-mosaico-single-social">9</div><!--img-mosaico-single-social-->
+			<div class="img-mosaico-single-social"></div><!--img-mosaico-single-social-->
+			<div class="img-mosaico-single-social"></div><!--img-mosaico-single-social-->
+			<div class="img-mosaico-single-social"></div><!--img-mosaico-single-social-->
+			<div class="img-mosaico-single-social"></div><!--img-mosaico-single-social-->
+			<div class="img-mosaico-single-social"></div><!--img-mosaico-single-social-->
+			<div class="img-mosaico-single-social"></div><!--img-mosaico-single-social-->
+			<div class="img-mosaico-single-social"></div><!--img-mosaico-single-social-->
+			<div class="img-mosaico-single-social"></div><!--img-mosaico-single-social-->
+			<div class="img-mosaico-single-social"></div><!--img-mosaico-single-social-->
 		</div><!--mosaico-social-->
 		<div class="facebook-chamada">
 			<a target="_blank" href="http://facebook.com"><img src="Assets/fb.png" /></a>
@@ -273,7 +278,7 @@
 	</section><!--social-->
 
 
-    <section class="formulario">
+    <section id="contato" class="formulario">
         <h2>contato</h2>
         <form>
             <div class="form">

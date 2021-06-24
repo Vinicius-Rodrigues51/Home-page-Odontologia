@@ -17,15 +17,25 @@
 
 .container{
     width: 100%;
-    max-width: 1500px;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 /*********Header*********/
 
+.slick-dots li button:before
+    {
+        font-size: 40px;
+        line-height: 20px;
+        
+    }
+
 header{
     padding: 20px 2%;
     width: 100%;
+}
+
+header .container{
+	max-width: 1500px;
 }
 
 header .logo{
@@ -48,7 +58,7 @@ nav.menu-mobile ul{
 	position: absolute;
 	top: 60px;
 	left: 0;
-	background-color: white;
+	background-color: #688293;
 	text-align: center;
 	width: 100%;
 	z-index: 10;
@@ -60,10 +70,9 @@ nav.menu-mobile ul li{
 	text-transform: uppercase;
 }
 
-/* nav.menu-mobile ul li a{
-	cursor: pointer;
-} */
-
+nav.menu-mobile ul li a{
+	color: white;
+}
 
 
 header nav.menu-desktop{
@@ -96,30 +105,24 @@ section.mosaico{
 .mosaico-single{
     width: calc(100% / 6);
     float: left;
-	padding: 0 15px;
+	padding: 0 5px;
 }
 
 .img-single{
     width: 100%;
     padding-top: 100%;
-    /* background-color: #ccc; */
-    border: 3px solid white;
+    border-bottom: 3px solid white;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-/* section.mosaico > .container{
-    max-width: 1700px; 
-} */
-
-/***************/
-
 /*********section-servicos*********/
 
 section.servicos > .container{
-    max-width: 1000px;
-    display: flex;
+	width: 100%;
+    max-width: 1000px; 
+     display: flex;
     align-items: center;
     text-align: center;
     position: relative;
@@ -246,6 +249,12 @@ section.tratamentos .tratamento-container{
 	float: left;
 	width: 33.3%;
 	padding: 30px 0;
+	max-width: 1500px;
+}
+
+section.tratamentos{
+	max-width: 1500px;
+	margin: 0 auto;
 }
 
 section.tratamentos{
@@ -362,7 +371,7 @@ section.depoimentos .depoimento-single{
 .img-mosaico-single-social{
 	float: left;
 	width: calc(100% / 9);
-	padding-top: calc(100% / 9);
+	padding-top: 100%;
 	border:6px solid white;
 }
 
@@ -491,6 +500,7 @@ section.info-geral{
 
 .rodape-container{
 	width: 100%;
+	max-width: 1500px;
 }
 
 .box-rodape{
@@ -597,35 +607,29 @@ footer{
 	}
 
 	section.servicos > .container{
-		/*
-		max-width: 800px;
-		display: flex;
-		align-items: center; 
-		position: relative;
-		top:-30px;
-		text-align: center;
-		*/
 		flex-direction: column;
         top: -10px;
+		max-width: 100%;
 	}
 
-		section.servicos > .container .box-servico:nth-of-type(1){
-			width: 90%;
-			max-width: 350px;
-			padding:30px 2%;
-		}
-
-		section.servicos > .container .box-servico:nth-of-type(2){
-			width: 94%;
-			max-width: 380px;
-			padding:40px 2%;
-		}
-
-		section.servicos > .container .box-servico:nth-of-type(3){
-			width: 90%;
-			max-width: 350px;
-			padding:30px 2%;
-		}
+	.box-servicos:nth-of-type(1){
+		width: 85%;
+		padding: 30px 30px;
+		background-color: #576975;
+	}
+	
+	.box-servicos:nth-of-type(2){
+		width: 90%;
+		padding: 40px 70px;
+		background-color: #688293;
+		background-image: none;
+	}
+	
+	.box-servicos:nth-of-type(3){
+		width: 85%;
+		padding: 30px 30px;
+		background-color: #576975;
+	}
 
 		section.perfil-container .perfil-wraper{
 			padding-top: 0;
@@ -689,12 +693,10 @@ footer{
 		}
 
 		.img-mosaico-single-social{
-			width: calc(100% / 3);
-			padding-top: calc(100% / 3);
-		}
-
-		.mosaico-social > div:nth-of-type(1n+4){
-			display: none;
+			float: left;
+			width: calc(100% / 9);
+			padding-top: 100%;
+			border:6px solid white;
 		}
 
 		.img-fernanda{
@@ -723,7 +725,7 @@ footer{
 		display: inline-block;
 	}
 
-	section.tratamentos .tratamento-container{
+	/* section.tratamentos .tratamento-container{
 		float: left;
 		width: 50%;
 		padding: 30px 0;
@@ -731,7 +733,7 @@ footer{
 
 	#last{
 		display: none;
-	}
+	} */
 }
 
 
